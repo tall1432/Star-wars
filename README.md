@@ -1,2 +1,2 @@
 # Star-wars
-Small wep 'CRUD' app on Angular 
+Small web 'CRUD' app on Angular 
