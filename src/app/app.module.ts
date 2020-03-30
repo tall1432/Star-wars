@@ -9,13 +9,15 @@ import { ItemComponent } from './item/item.component';
 import { LogService } from './log.service';
 import { CreateCharacterComponent } from './create-character/create-character.component';
 import { FormsModule  } from "@angular/forms";
+import { TestComponent } from './test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
     TabsComponent,
     ListComponent,
     ItemComponent,
-    CreateCharacterComponent
+    CreateCharacterComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
