@@ -14,8 +14,13 @@ import { TestComponent } from './test/test.component'
 import { HeaderComponent } from './header/header.component'
 
 const routes = [
-  { path: '', component: TabsComponent },
+  { path: 'characters', component: TabsComponent,children:[
+    {path:'',redirectTo:'all',pathMatch:'full'},
+    {path:':side', component: ListComponent}
+
+  ] },
   { path: 'new-character', component: CreateCharacterComponent },
+  {path:'**',redirectTo:'/characters'}
 ]
 @NgModule({
   declarations: [
